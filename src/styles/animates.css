@@ -1,0 +1,40 @@
+.slide-fade-right{
+  position: fixed;
+  left:0;right: 0;
+  width: 100%;
+}
+.slide-fade-right-enter, .slide-fade-right-leave-to
+{
+  left:0;top: 0;right: 0;
+  position: absolute;
+  transform:translate3d(100%, 0, 0) translate3d(0, 0, 0) rotate(0) scale(1) ;
+  opacity:1;
+}
+.slide-fade-right-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-right-leave-active {
+  transition: all 0.3s ease;
+  transform:translate3d(-100%, 0, 0) translate3d(0, 0, 0) rotate(0) scale(1) ;
+}
+
+/* 从左往右 */
+.slide-fade-left{
+  position: fixed;
+  left:0;right: 0;
+  width: 100%;
+}
+.slide-fade-left-enter, .slide-fade-left-leave-to
+{
+  left:0;top: 0;right: 0;
+  position: absolute;
+  transform:translate3d(-100%, 0, 0) translate3d(0, 0, 0) rotate(0) scale(1) ;
+  opacity:1;
+}
+.slide-fade-left-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-left-leave-active {
+  transition: all 0.3s ease;
+  transform:translate3d(100%, 0, 0) translate3d(0, 0, 0) rotate(0) scale(1) ;
+}
